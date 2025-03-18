@@ -1,0 +1,15 @@
+logging:
+  - log_name: Pipeline Execution Logs
+    description: >
+      Captures task outputs, tool interactions, and validation steps for debugging and refinement.
+    strategies:
+      - Log raw API responses for JiraBoardGrabber and CardDataFetcherTool.
+      - Capture flagged invalid data during validation.
+      - Add summaries for feedback provided by Manager Agent to agents.
+
+  - log_name: Validation Logs
+    description: >
+      Tracks status of task outputs as reviewed via validators.yaml configurations.
+    strategies:
+      - Highlight output discrepancies, missing data, and formatting failures before advancing to next tasks.
+      - Enable timestamp-based traceability for escalation workflows.

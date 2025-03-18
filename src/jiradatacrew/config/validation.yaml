@@ -1,0 +1,36 @@
+validators:
+  - validator_name: Data Validator
+    description: >
+      Ensures that collected data aligns strictly with retrieved Jira board data. Flags missing or incomplete data (e.g., missing keys, empty responses).
+    validation_steps:
+      - Check:
+          description: >
+            Validate the existence of 'issues' and 'fields' keys in data_collection_task output.
+          expected_behavior: >
+            Issues must be grouped under epics with valid attributes (summary, status, assignee).
+      - Check:
+          description: >
+            Ensure 'key' field from JiraBoardGrabber is passed correctly into CardDataFetcherTool.
+          expected_behavior: >
+            Returned issue details should be token-efficient and contextually accurate.
+  - validator_name: Analysis Validator
+    description: >
+      Validates actionable insights derived from Jira board data for blockers, dependencies, and sprint progress.
+    validation_steps:
+      - Check:
+          description: >
+            Ensure grouped dependencies, blockers, and assignee contributions reflect validated Jira data passed downstream.
+          expected_behavior: >
+            Speculative insights or fabricated data points must be flagged, ensuring only REAL data is used.
+  - validator_name: Report Validator
+    description: >
+      Validates the Markdown Sprint Report against both collected and analyzed Jira data. Checks for:
+      - Proper structured sections.
+      - Token efficiency in summary.
+      - Visibility into blockers, dependencies, and assignee contributions.
+    validation_steps:
+      - Check:
+          description: >
+            Verify Markdown structure adheres to expected output format (3 bullet points + breakdowns + recommendations).
+          expected_behavior: >
+            All sections must clearly indicate blockers and progress milestones derived explicitly from analysis outputs.

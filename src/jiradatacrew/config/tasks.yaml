@@ -1,0 +1,25 @@
+data_collection_task:
+  description: >
+    Query Jira boards dynamically via human input to resolve ambiguous queries about epics and retrieve metadata about 
+    corresponding issues. Workflow includes:
+    - Executing the JiraEpicGrabberFromBoard tool to present some options for the user to select. 
+    - After a human query, return the relevant issues associated with the epic referenced in the query.
+    - IMPORTANT: Ensure that you DON'T use the RetrieveIssuesFromEpic tool until you have received human input guidance on what Epic to choose.
+  expected_output: >
+    JSON output containing:
+    - Resolved epics relevant to the user query.
+    - Metadata for issues grouped under each epic (filtered fields like key, status, assignee, comments).
+  agent: data_collection_agent
+
+report_generation_task:
+  description: >
+    Based on the information collected from the data_collection_task, generate a report with insights on the epics and their associated issues.
+    Look to keep this in the same style as an executive summary, with a focus on the most critical information. Present some potential next steps for the epic, and some potential extra
+    issues to create to ensure the epic's overall goal is met.
+  expected_output: >
+    A report in Markdown format containing:
+    - Summary of epics and their associated issues.
+    - Insights on the status of each epic and its issues.
+    - Recommendations for next steps and additional issues to create.
+  agent: report_generation_agent
+  output_file: report.md

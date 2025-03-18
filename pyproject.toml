@@ -1,0 +1,24 @@
+[project]
+name = "jiradatacrew"
+version = "0.1.0"
+description = "jiraDataCrew using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.102.0,<1.0.0",
+    "jira>=3.8.0",
+]
+
+[project.scripts]
+jiradatacrew = "jiradatacrew.main:run"
+run_crew = "jiradatacrew.main:run"
+train = "jiradatacrew.main:train"
+replay = "jiradatacrew.main:replay"
+test = "jiradatacrew.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"

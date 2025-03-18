@@ -1,0 +1,33 @@
+crew_name: JiraDataCrew
+description: >
+  A crew designed to retrieve, validate, analyze, and generate actionable Jira sprint-based reports.
+workflow:
+  tasks:
+    - task_name: data_collection_task
+      role: Jira Data Collection Expert
+      description: >
+        Retrieves and validates Jira data from the provided board and generates clean, token-efficient summaries for downstream analysis.
+      next_task: data_analysis
+    - task_name: data_analysis_task
+      role: Agile Project Analysis Specialist with expertise in blocker resolution and sprint milestone projections
+      description: >
+        Analyzes validated Jira data, focusing on blockers, dependencies, assignee contributions, and actionable recommendations for improving workflows.
+      next_task: report_generation
+    - task_name: report_generation_task
+      role: Sprint Report Compilation Professional specializing in stakeholder-friendly summaries
+      description: >
+        Generates Markdown-formatted reports based on validated Jira data and analysis insights. Focuses on actionable recommendations, avoiding speculative outputs, and summarizing blockers and sprint dynamics.
+      next_task: manager_review
+
+execution_strategies:
+  - name: Iterative Validation
+    description: >
+      Validators (e.g., Manager Agent) ensure outputs align with task instructions and are derived strictly from Jira-provided data.
+tools:
+  - name: JiraBoardGrabber
+  - name: CardDataFetcherTool
+cross_task_rules:
+  - rule: >
+      Ensure verified outputs from the data collection task are passed into analysis and reports without assumptions or extrapolations.
+  - rule: >
+      Automatically flag agent outputs with missing data for manual escalation or refinement before advancing to the next task.

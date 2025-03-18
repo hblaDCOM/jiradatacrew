@@ -1,0 +1,85 @@
+# Executive Summary Report: Epic NACHO-400 - TACO - KCode Inclusion
+
+## Summary of Epic and Associated Issues
+
+**Epic ID:** 825084  
+**Epic Key:** NACHO-400  
+**Epic Summary:** TACO - KCode Inclusion  
+**Status:** In Progress  
+
+### Associated Issues:
+1. **Issue Key:** NACHO-398  
+   **Assignee:** Stephen Bay  
+   **Status:** Done  
+   **Most Recent Comment:** 
+   > *Update [20/01]*  
+   > - KCode editing for contract management page  
+   > - Hidden form to collect kcodes as values to send to backend  
+   > ![image-20250120-025328.png](path-to-image)  
+
+2. **Issue Key:** NACHO-446  
+   **Assignee:** Stephen Bay  
+   **Status:** In Progress  
+   **Most Recent Comment:** 
+   > *Update [17/03]*  
+   > - Contracts are referenced by kcode-lm-customer combination  
+   > - Fixed contract name format in prediction_context  
+   > - Validated categorizing of new entries  
+
+3. **Issue Key:** NACHO-406  
+   **Assignee:** Victoria Marchant  
+   **Status:** Done  
+   **Most Recent Comment:** 
+   > *Feedback from Trevor 07/02:*  
+   > Points for improvement ->  
+   > - Macro trust issue; look into cert to allow users to register doc as trusted by default  
+   > - Tidy up the examples and instructions to clarify that...
+
+4. **Issue Key:** NACHO-407  
+   **Assignee:** Stephen Bay  
+   **Status:** Done  
+   **Most Recent Comment:** 
+   > *Update [29/01]*  
+   > - Uploaded form to blob  
+   > - Updated Key Vault to access new blob container  
+   > - Created a function to download the file from blob with a temporary Shared Access Signature.
+
+5. **Issue Key:** NACHO-408  
+   **Assignee:** Stephen Bay  
+   **Status:** Done  
+   **Most Recent Comment:** 
+   > *Update [28/01]*  
+   > - Created the Kcode table  
+   > - Connected the Customer Mapping table and tested  
+   > - Started testing all current queries.  
+   > **To do:** Verify customer mapping categories; Complete queries testing.
+
+6. **Issue Key:** NACHO-409  
+   **Assignee:** Stephen Bay  
+   **Status:** Done  
+   **Most Recent Comment:** 
+   > *Update [17/02]*  
+   > - Final tests completed  
+   > - Added edit-friendly name function and validation  
+   > - Consolidated formatting on edit and rule view pages.
+
+## Insights on the Status of Epic and Issues
+- The epic **TACO - KCode Inclusion** is currently marked as ongoing, with a significant number of associated issues marked as complete (5 out of 6 issues).
+- The only issue in progress (NACHO-446) indicates an active effort towards improving the integration of contracts, which is crucial to meeting the overall goal of the epic.
+- Comments from completed issues provide valuable insights into the work done and highlight areas needing further improvement, particularly regarding user trust and clarity in documentation.
+
+## Recommendations for Next Steps
+1. **Finalize NACHO-446:** Ensure that the issue is completed promptly to move the epic towards closure.
+2. **Quality Assurance Testing:** Conduct comprehensive testing on all functionalities tied to the KCode system to identify any potential issues before the final launch.
+3. **Documentation Review:** Revise and enhance documentation based on the feedback received to ensure clarity for users regarding the new features.
+
+## Suggested Additional Issues to Create
+1. **Integration Testing (NACHO-450):** To validate the complete integration of the KCode functionalities with the current system before release.
+2. **User Feedback Collection (NACHO-451):** To gather insights and feedback from end-users once the KCode system is live, ensuring continuous improvement.
+3. **Performance Optimization (NACHO-452):** To address any potential performance issues that may arise from the new additions to the system.
+
+This report provides a clear understanding of the epic’s current status and outlines action items to ensure its successful completion. 
+
+--- 
+
+**End of Report**
