@@ -1,39 +1,40 @@
 ```markdown
-# Executive Summary Report on Epic NACHO-400: TACO - KCode Inclusion
+# Executive Summary Report on Epic: Standard Change Operationalisation (EASAMD-175)
 
-## Epic Overview
-- **Epic Key**: NACHO-400
-- **Epic Summary**: TACO - KCode Inclusion
-- **Total Issues**: 5
+## Summary of Epics and Associated Issues
 
-### Associated Issues Summary
-| Issue Key   | Assignee         | Status      | Most Recent Comment Date | Comment Summary                                               |
-|-------------|------------------|-------------|--------------------------|--------------------------------------------------------------|
-| NACHO-398   | Stephen Bay      | Done        | 2025-01-20               | Updated KCode editing for contract management                 |
-| NACHO-446   | Stephen Bay      | In Progress | 2025-03-17               | Fixed contract name format and validated new entries          |
-| NACHO-406   | Victoria Marchant | Done        | 2025-02-10               | Points for improvement identified for macro trust issues      |
-| NACHO-407   | Stephen Bay      | Done        | 2025-01-29               | Function created to download files from blob                 |
-| NACHO-408   | Stephen Bay      | Done        | 2025-01-28               | Created and tested the Kcode table and customer mapping      |
-| NACHO-409   | Stephen Bay      | Done        | 2025-02-17               | Final tests completed, added functionality and fixed bugs    |
+The epic **Standard Change Operationalisation** (EASAMD-175) encompasses four primary issues, each addressing distinct components of the operationalization process. The current status and assignments are as follows:
 
-## Insights on Epic Status
-- **Overall Progress**: The majority of associated issues (4 out of 5) are marked as **Done**, indicating that substantial work has been completed. The only issue currently in progress (NACHO-446) is actively being addressed and shows significant advancements.
-- **Completion of Key Functions**: Core functionalities related to KCode handling and contract management are in place, with successful completion of tasks such as:
-  - KCode editing interface (NACHO-398).
-  - Contract format fixes (NACHO-446).
-  - Blob storage integration to manage file downloads (NACHO-407).
-  
-- **Quality Improvement**: Feedback mechanisms are in place as indicated by NACHO-406, which focuses on trust issues and improving user documentation. This demonstrates commitment to quality.
+| Issue Key   | Assignee         | Status       | Most Recent Comment                                                                                  |
+|-------------|------------------|--------------|------------------------------------------------------------------------------------------------------|
+| EASAMD-22   | Sarah Cruickshank | Done         | "made the fixes and republished" (2024-11-27)                                                       |
+| EASAMD-177  | Matt Shepheard    | In Progress  | "Weekly check-in sessions with SDM’s in place. Two observations..." (2024-10-30)                    |
+| EASAMD-222  | Harrison Bland     | In Progress  | "Matt has sent link below through to Suzette, to request some vanguard testing..." (2025-01-22)     |
+| EASAMD-223  | Nirav Shah        | Done         | "Thanks. We’ll close this card off as a 'Won’t Do'..." (2024-12-16)                                |
+
+## Insights on the Status of Each Epic and Its Issues
+
+- **EASAMD-22:** This issue has been completed successfully, as confirmed by Sarah's comment. The fixes implemented should positively impact the ongoing workflow for standard changes.
+
+- **EASAMD-177:** Currently in progress, this issue is actively being addressed with ongoing weekly check-in sessions. However, it was noted that visual clarity for testing outcomes needs improvement, indicating an area requiring focus by the assigned resource, Matt.
+
+- **EASAMD-222:** This issue is also in progress, with efforts to conduct vanguard testing under Harrison’s leadership. There is an expressed need for clarity in the testing process, which may impact timelines if not addressed promptly.
+
+- **EASAMD-223:** Completed but labeled as a "Won’t Do." The intention to pivot towards a rewrite of the standard change application is a strategic decision, highlighting the need to meet stakeholder expectations effectively.
 
 ## Recommendations for Next Steps
-1. **Complete NACHO-446**: Urgently push to finalize the processing of the remaining in-progress issue, as it serves as a pivot point for operations reliant on accurate contract referencing.
-2. **Quality Assurance Review**: Conduct a thorough review of completed tasks, especially focusing on feedback from NACHO-406 to iterate and implement enhancements as necessary.
-3. **Documentation Finalization**: Ensure all updates and processes are properly documented, especially around the changes introduced for user access and improvements made in the system.
 
-## Suggested Additional Issues to Create
-1. **NACHO-450 - User Acceptance Testing (UAT)**: Initiate a UAT phase to ensure that all components addressed in the KCode Inclusion are functioning as intended from the user's perspective.
-2. **NACHO-451 - Performance Optimization**: Investigate any potential performance bottlenecks in the new KCode functionalities to enhance user experience.
-3. **NACHO-452 - Training and Support Material Development**: Create comprehensive training materials to inform users about new features and processes introduced within this epic.
+1. **Enhance Communication Channels:** Leverage feedback from the ongoing weekly check-ins on EASAMD-177 to address the identified visual clarity issue. Regular updates to and from the team can foster transparency and ensure swift issue resolution.
 
-By implementing these recommendations and creating the suggested additional issues, the team can guarantee that the goals of the epic are met while continuing to elevate user satisfaction and operational efficiency.
+2. **Testing Coordination:** For EASAMD-222, streamline coordination for the vanguard testing phase. Ensure consistent and clear communication between team members to mitigate any confusion that may delay testing outcomes.
+
+3. **Finalize Documentation:** With two issues marked as done, it is crucial to document key learnings and finalize experience reports. This will serve as a resource for future epics and provide insights into effective operational practices.
+
+## Potential Additional Issues to Create
+
+- **Visual Clarity Improvement Task:** Create an issue focused on enhancing the visual and interaction design aspects identified in EASAMD-177.
+  
+- **Streamlining Vanguard Testing:** Develop an issue focused on creating a framework for conducting and reporting vanguard tests, ensuring clarity and efficiency.
+
+By implementing these recommendations and tracking additional issues, the epic's primary objectives can be met effectively while continuously improving team processes.
 ```

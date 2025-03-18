@@ -1,8 +1,8 @@
 data_collection_task:
   description: >
     Query Jira boards dynamically via human input to resolve ambiguous queries about epics and retrieve metadata about 
-    corresponding issues. Workflow includes:
-    - Executing the JiraEpicGrabberFromBoard tool to present some options for the user to select. 
+    corresponding issues for the {team_name} team. Workflow includes:
+    - Executing the JiraEpicGrabberFromBoard tool (where board_id = {board_id}) to present some options for the user to select. 
     - After a human query, return the relevant issues associated with the epic referenced in the query.
     - IMPORTANT: Ensure that you DON'T use the RetrieveIssuesFromEpic tool until you have received human input guidance on what Epic to choose.
   expected_output: >

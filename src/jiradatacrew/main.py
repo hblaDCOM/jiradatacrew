@@ -20,8 +20,8 @@ def run():
     Run the crew.
     """
     inputs = {
-        "board_id": "3359",
-        "team_name": "NACHO Business"
+        "board_id": "3413",
+        "team_name": "EASA Modern Data Platform Board"
     }
     
     try:
@@ -35,8 +35,8 @@ def train():
     Train the crew for a given number of iterations, allowing human feedback.
     """
     inputs = {
-        "board_id": "3359",
-        "team_name": "NACHO Business"
+        "board_id": "3413",
+        "team_name": "EASA Modern Data Platform Board"
     }
     try:
         iterations = int(sys.argv[1])

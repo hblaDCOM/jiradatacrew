@@ -21,13 +21,12 @@ class JiraEpicGrabberFromBoard(BaseTool):
     jira_server: str = os.environ['JIRA_SERVER']
     jira_username: str = os.environ['JIRA_USERNAME']
     api_token: str = os.environ['JIRA_API_TOKEN']
-    board_id: str = os.environ['JIRA_BOARD_ID']
 
-    def _run(self) -> Dict[str, Any]:
+    def _run(self, board_id: str) -> Dict[str, Any]:
         """
         Fetch Jira board epics using the Jira REST API.
         """
-        url = f"{self.jira_server}/rest/agile/1.0/board/{self.board_id}/epic"
+        url = f"{self.jira_server}/rest/agile/1.0/board/{board_id}/epic"
         query_params = {
             "maxResults": 120,  # Restrict the number of epics per page
         }
